@@ -430,9 +430,11 @@ curl http://localhost:8080/users/1 \
 
 ## Dependencies
 
+```
 - chi (router): `github.com/go-chi/chi/v5`
 - jwt-go: `github.com/golang-jwt/jwt/v5`
 - validator: `github.com/go-playground/validator/v10`
 - godotenv: `github.com/joho/godotenv`
 ```
 
+Licensed by [License](LICENSE)
