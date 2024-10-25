@@ -14,12 +14,19 @@ go-server/
 ```
 
 ## API Endpoints
+### Test Api Working Correctly
+- **Method** GET
+- **Path** `/`
+- **Response** 200 Success 
+```
+Connected Successfully
+```
 
 ### Public Endpoints
 
 #### 1. Create User
 - **Method**: POST
-- **Path**: `/users`
+- **Path**: `/users/new`
 - **Description**: Register a new user
 - **Request Body**:
 ```json

@@ -7,7 +7,7 @@ import (
 
 type ErrorResponse struct{
   Status int `json:"status"`
-  Message string `"json:message"`
+  Message string `json:"message"`
   Error string `json:"error,omitempty"`
 }
 
@@ -41,7 +41,7 @@ func(h *ErrorHandler) RespondWithError(w http.ResponseWriter, status int, messag
 }
 
 func(h *ErrorHandler) RespondWithJSON(w http.ResponseWriter, status int, payload interface{}){
-  w.Header().Set("Content-TYpe", "application/json")
+  w.Header().Set("Content-Type", "application/json")
   w.WriteHeader(status)
   json.NewEncoder(w).Encode(payload)
 }
