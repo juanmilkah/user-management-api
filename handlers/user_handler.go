@@ -37,7 +37,6 @@ func (h *UserHandler) GetUsers(w http.ResponseWriter, r *http.Request){
     return 
   }
 
-  w.Header().Set("Content-Type", "application/json")
   h.errorHandler.RespondWithJSON(w, http.StatusOK, users)
 }
 
