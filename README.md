@@ -141,6 +141,12 @@ Create a `.env` file in the root directory with the following variables:
 PORT=8080
 JWT_SECRET=your-secret-key
 ENV=development
+
+DB_NAME=<your_database_name>
+DB_HOST="localhost"
+DB_PASSWORD=<your_database_password>
+DB_USER=<database_user_name>
+DB_PORT="5432"
 ```
 
 ## Running the Application
